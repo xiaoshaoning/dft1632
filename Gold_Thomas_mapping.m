@@ -1,3 +1,6 @@
+% n = N_2 * n_1 + N_1 * n_2 (mod N)
+% k = N_2 * mod(<N_2^(-1)>, N_1) * k_1 + N_1 * mod(<N_1^(-1)>, N_2) * k_2 (mod N)
+
 function Gold_Thomas_mapping
 
 N_1 = 96;
