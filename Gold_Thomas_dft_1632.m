@@ -14,7 +14,7 @@ x_prime = reshape(x_permutated, 96, 17);
 
 y = zeros(96, 17);
 for index = 1:17
-    y(:, index) = fft(x_prime(:, index));
+    y(:, index) = Gold_Thomas_dft_96(x_prime(:, index));
 end
 
 y_reshaped = y.';
