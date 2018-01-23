@@ -4,7 +4,7 @@
 function y = dft_19(x)
 
 if length(x) ~= 19
-    error('the length of the input shall be 17.');
+    error('the length of the input shall be 19.');
 end
 
 N = 19;
