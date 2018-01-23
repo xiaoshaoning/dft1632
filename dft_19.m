@@ -1,5 +1,5 @@
 % rader's fft algorithm for N = 19
-% based on the fact that 3 is a primitive root of 19
+% based on the fact that 2 is a primitive root of 19
 
 function y = dft_19(x)
 
