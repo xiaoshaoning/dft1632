@@ -18,14 +18,17 @@ x_prime = reshape(x_permutated, 69, 2);
 
 y = zeros(69, 2);
 for index = 1:2
-    y(:, index) = fft(x_prime(:, index));
+%     y(:, index) = fft(x_prime(:, index));
+    y(:, index) = Gold_Thomas_dft_69(x_prime(:, index));
 end
 
 y_reshaped = y.';
 
 z = zeros(2, 69);
 for index = 1:69
-    z(:, index) = fft(y_reshaped(:, index));
+%     z(:, index) = fft(y_reshaped(:, index));    
+    z(1, index) = y_reshaped(1, index) + y_reshaped(2, index);
+    z(2, index) = y_reshaped(1, index) - y_reshaped(2, index);
 end
 
 z_in_a_column = z(:);
